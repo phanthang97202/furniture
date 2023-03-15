@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700;1,900&display=swap");
+ul {
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.products__detail {
+  color: #433779;
+  padding-top: 60px;
+}
+.products__detail_image {
+  position: relative;
+}
+.products__detail_image .products__detail_sale {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  background-color: #ee6352;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 4px 10px;
+}
+.products__detail_description_name {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Plus Jakarta Sans";
+}
+.products__detail_description_evaluate {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+}
+.products__detail_description_evaluate ul {
+  display: flex;
+  margin-right: 8px;
+}
+.products__detail_description_evaluate ul .activeEvaluate {
+  color: green;
+  opacity: 1;
+}
+.products__detail_description_evaluate ul li {
+  color: #b3b1b1;
+  opacity: 0.8;
+}
+.products__detail_description_evaluate a {
+  font-size: 14.4px;
+  color: #a8a8a8;
+}
+.products__detail_description_price {
+  margin-bottom: 30px;
+}
+.products__detail_description_price del {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.products__detail_description_price span {
+  font-size: 25px;
+  font-weight: bold;
+}
+.products__detail_description_warranty {
+  margin-bottom: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.products__detail_description_warranty p {
+  margin-right: 30px;
+  font-weight: 500;
+}
+.products__detail_description_warranty div {
+  border: 1px solid rgb(230, 230, 230);
+  padding: 2px;
+  border-radius: 4px;
+  height: 100%;
+}
+.products__detail_description_warranty div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.products__detail_description_color {
+  display: flex;
+  align-items: center;
+}
+.products__detail_description_color p {
+  margin-right: 56px;
+  font-weight: 500;
+}
+.products__detail_description_color ul {
+  display: flex;
+  align-items: center;
+}
+.products__detail_description_color ul li {
+  display: flex;
+  padding: 2px;
+  border: 1px solid rgb(197, 192, 192);
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+  text-align: center;
+}
+.products__detail_description_color ul li button {
+  margin: auto;
+  height: 95%;
+  width: 95%;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+.products__detail_description_buy {
+  display: flex;
+  align-items: center;
+  margin: 30px 0 30px 0;
+}
+.products__detail_description_buy div {
+  border: 1px solid rgb(234, 229, 229);
+  margin-right: 4px;
+}
+.products__detail_description_buy div button {
+  padding: 15px 0;
+  width: 50px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  background-color: transparent;
+}
+.products__detail_description_buy div input {
+  width: 50px;
+  border: none;
+  outline: none;
+  height: max-content;
+}
+.products__detail_description_buy > button {
+  border: none;
+  flex: 1;
+  background-color: #ee6352;
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px 20px;
+}
+.products__detail_description_helper {
+  margin-bottom: 10px;
+  display: flex;
+  border: 1px solid #eeeeee;
+  padding: 20px;
+  border-radius: 4px;
+  color: #433779;
+}
+.products__detail_description_helper > p {
+  width: 40px;
+  display: block;
+}
+.products__detail_description_helper div {
+  flex: 1;
+}
+.products__detail_description_helper div h5 {
+  font-size: 19px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 600;
+}
+.products__detail_information {
+  border: 1px solid rgb(241, 241, 241);
+  padding: 60px;
+}
+.products__detail_information h2 {
+  margin-bottom: 30px;
+}
+.products__detail_information p {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.products__detail_information > div {
+  margin-bottom: 30px;
+}
+.products__detail_information_relative > div {
+  margin: 16px 0;
+  display: flex;
+  align-items: center;
+}
+.products__detail_information_relative > div > div {
+  width: 15%;
+}
+.products__detail_information_relative > div > div p:first-child {
+  margin: 0;
+  color: #444444;
+  font-weight: 500;
+}
+.products__detail_information_relative > div > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.products__detail_information_relative > div span {
+  width: 70%;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.second__text_relative {
+  margin: 0;
+  font-weight: 400 !important;
+  color: #433779 !important;
+}
+
+.product__detail_review {
+  margin-top: 60px;
+  color: #433779;
+}
+.product__detail_review_name {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 600;
+}
+.product__detail_review_user {
+  background-color: #fafafa;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.product__detail_review_user > div:first-child {
+  display: flex;
+  align-items: center;
+}
+.product__detail_review_user > div:first-child img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.product__detail_review_user > div:first-child h5 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+.product__detail_review_user > div:first-child h5 span {
+  color: #a8a8a8;
+  font-size: 16px;
+  font-weight: initial;
+}
+.product__detail_review_content {
+  border-top: 1px solid rgb(230, 230, 230);
+  background-color: #fafafa;
+  padding: 30px 30px;
+}
+.product__detail_review_mustologin {
+  margin-top: 20px;
+}
+.product__detail_review_mustologin h5 {
+  font-size: 21px;
+  font-weight: 500;
+}
+.product__detail_review_mustologin p a {
+  color: #ee6352;
+}
+
+@media screen and (max-width: 600px) {
+  .products__detail_information {
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=detail.css.map */

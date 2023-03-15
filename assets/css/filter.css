@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700;1,900&display=swap");
+ul {
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.title__filter {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+.title__filter h2 {
+  font-size: 45px;
+  font-family: "Plus Jakarta Sans";
+  color: #433779;
+  font-weight: bold;
+}
+
+.container__handle_filter {
+  padding: 30px 0;
+}
+
+.handle__filter_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.handle__filter_box > p {
+  color: #a8a8a8;
+}
+
+.handle__filter {
+  display: flex;
+  align-items: center;
+}
+.handle__filter > div {
+  margin: 0 10px;
+}
+.handle__filter_quantity {
+  display: flex;
+  align-items: center;
+}
+.handle__filter_quantity > p {
+  color: #433779;
+}
+.handle__filter_quantity ul {
+  display: flex;
+  align-items: center;
+}
+.handle__filter_quantity ul li button {
+  color: #433779;
+  padding: 0 6px;
+  opacity: 0.5;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.handle__filter_quantity ul li button.activeQuantity {
+  color: #433779;
+  text-decoration: underline;
+  opacity: 1;
+}
+.handle__filter_grid {
+  display: flex;
+  align-items: center;
+}
+.handle__filter_grid ul {
+  display: flex;
+  align-items: center;
+}
+.handle__filter_grid ul li button {
+  font-size: 18px;
+  color: #433779;
+  padding: 0 6px;
+  opacity: 0.4;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.handle__filter_grid ul li button.activeGrid {
+  color: #050115;
+  text-decoration: underline;
+  opacity: 1;
+}
+.handle__filter_option select {
+  border: none;
+  outline: none;
+  color: #433779;
+  font-size: 15px;
+}
+.handle__filter_filter button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.handle__filter_filter button:hover {
+  text-decoration: underline;
+}
+
+.products__filter {
+  display: block;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.products__filter_image {
+  height: 414px;
+  overflow: hidden;
+}
+.products__filter_image:hover > img {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+.products__filter_desc p:first-child {
+  color: #433779;
+}
+.products__filter_desc > .products__detail_description_evaluate {
+  justify-content: center;
+  margin: 2px 0;
+}
+.products__filter_desc p:last-child del {
+  font-size: 14.4px;
+  color: #433779;
+  opacity: 0.7;
+  font-weight: bold;
+  margin-right: 4px;
+}
+.products__filter_desc p:last-child span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #433779;
+}
+
+@media screen and (max-width: 756px) {
+  .handle__filter_quantity {
+    display: none;
+  }
+  .handle__filter_grid {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=filter.css.map */

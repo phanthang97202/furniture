@@ -1,0 +1,911 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700;1,900&display=swap");
+ul {
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.welcome {
+  background-color: #963d5a;
+  padding: 8px 10%;
+}
+.welcome p {
+  line-height: 24px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: bolder;
+}
+.welcome ul li a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+}
+.welcome ul li a i {
+  font-size: 16px;
+  padding-right: 4px;
+}
+.welcome ul li:nth-child(2) {
+  margin: 0 20px;
+}
+
+.container__header {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  padding: 0 10%;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeebeb;
+  padding: 18px 0;
+}
+.header__top_logo {
+  width: 20%;
+  height: 61px;
+  width: 182px;
+}
+.header__top_logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.header__top_search {
+  width: 46%;
+}
+.header__top_search div {
+  padding: 8px 10px;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+}
+.header__top_search div button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-right: 6px;
+}
+.header__top_search div input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.header__top_handler {
+  width: auto;
+}
+.header__top_handler ul {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+.header__top_handler ul li {
+  border: 1px solid rgb(249, 240, 240);
+  border-radius: 50%;
+  position: relative;
+}
+.header__top_handler ul li:last-child {
+  margin-left: 10px;
+}
+.header__top_handler ul li:hover {
+  border: 1px solid rgb(114, 82, 227);
+  transition: all 0.3s linear;
+}
+.header__top_handler ul li:nth-child(2) {
+  margin: 0 10px;
+}
+.header__top_handler ul li a {
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  color: #4a3ce4;
+}
+.header__top_handler ul li button {
+  display: block;
+  border: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  color: #4a3ce4;
+  background-color: transparent;
+}
+.header__top_handler ul li p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #ee6352;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.navigation__categories {
+  width: 233px;
+  display: flex;
+  cursor: pointer;
+}
+.navigation__categories_button {
+  width: 100%;
+  padding: 20px 30px;
+  background-color: #433779;
+}
+.navigation__categories_button p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+.navigation__categories_button p span:nth-child(2) {
+  padding: 0 6px;
+}
+.navigation__menu {
+  z-index: 20;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+.navigation__menu ul {
+  display: flex;
+}
+.navigation__menu ul li a {
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 20px 20px;
+  color: #433779;
+  font-weight: bold;
+}
+.navigation__menu ul li a:hover {
+  background-color: #433779;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.navigation__menu ul li .activeChooseMenu {
+  color: #ee6352;
+}
+
+.navigation__categories {
+  position: relative;
+}
+
+.categories {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  top: 62px;
+  left: 0;
+  background-color: #928989;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.categories ul {
+  position: relative;
+}
+.categories ul li {
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+.categories ul li a {
+  color: #433779;
+  font-weight: 500;
+  display: block;
+  padding: 20px 20px;
+}
+.categories ul li a img {
+  width: 25px;
+  height: 25px;
+  margin-right: 4px;
+}
+.categories ul li a:hover {
+  background-color: #f3f3f3;
+}
+.categories ul li a span:last-child {
+  font-weight: bold;
+  float: right;
+}
+.categories__chairs {
+  display: none;
+  padding: 30px;
+  border: 1px solid #f0f0f0;
+  background-color: #fff;
+  width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 233px;
+}
+.categories__chairs_items {
+  width: 80%;
+  margin: auto;
+}
+.categories__chairs_items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.categories__chairs_items ul li {
+  border: none;
+  color: #595959;
+  padding: 6px 0;
+}
+.categories__chairs_items ul li:first-child {
+  color: #433779;
+  font-weight: bold;
+}
+
+.categories__chairs_btn:hover .categories__chairs {
+  display: block;
+  transition: all 0.3s linear;
+}
+
+.banner {
+  background-color: #f8f6f5;
+  background-image: url("https://themes.muffingroup.com/be/furniturestore2/wp-content/uploads/2023/01/befurniturestore2-section-bg1.svg");
+}
+.banner .carousel__item_banner {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+.banner .carousel__item_banner .carousel_text_container {
+  width: 60%;
+}
+.banner .carousel__item_banner .carousel_text {
+  width: 50%;
+  margin-left: 50%;
+}
+.banner .carousel__item_banner .carousel_text h2 {
+  font-size: 45px;
+  font-family: "Plus Jakarta Sans" !important;
+  font-weight: bold;
+  color: #433779;
+}
+.banner .carousel__item_banner .carousel_text p {
+  margin: 20px 0;
+  color: #595959;
+  font-size: 16px;
+}
+.banner .carousel__item_banner .carousel_text button {
+  background-color: #ee6352;
+  padding: 18px 32px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Plus Jakarta Sans" !important;
+}
+.banner .carousel__item_banner .carousel_img {
+  flex: 1;
+}
+.banner .carousel__item_banner .carousel_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.title {
+  padding: 50px 0;
+}
+.title p {
+  font-size: 13px;
+  font-family: "Plus Jakarta Sans";
+  color: #afa5b6;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.title h2 {
+  font-size: 38px;
+  font-family: "Plus Jakarta Sans";
+  color: #433779;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.featured__item {
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+.featured__item img {
+  width: 100%;
+  height: 100%;
+}
+.featured__item img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
+}
+.featured__item_text {
+  width: 90%;
+  text-align: left;
+  margin: auto;
+}
+.featured__item_text p {
+  font-size: 19px;
+  font-family: "Plus Jakarta Sans";
+  color: #433779;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+
+.featured__banner_container {
+  background-color: #433779;
+  margin-top: 80px;
+}
+.featured__banner_container .carousel__featured {
+  height: 90vh;
+}
+
+.products_item {
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+.products_item h5 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  font-size: 200px;
+  opacity: 0.5;
+  z-index: 1;
+  color: #a5a5a5;
+  transform: translate(-50%, -50%);
+}
+.products_item_img {
+  z-index: 2;
+  margin: auto;
+  height: 502px;
+  width: 502px;
+}
+.products_item_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.products_item h6 {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-weight: bold;
+}
+.products_item p {
+  color: #fff;
+  margin: 10px 0;
+}
+.products_item button {
+  background-color: #ee6352;
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+.products_item button:hover {
+  background-color: #ee4832;
+  transition: all 0.3s linear;
+}
+
+.timer {
+  text-align: center;
+  border-bottom: 2px solid red;
+  padding-bottom: 20px;
+}
+.timer h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #433779;
+}
+.timer p {
+  font-size: 13px;
+  font-weight: bold;
+  color: #433779;
+}
+
+@media (max-width: 767px) {
+  .carousel__container_all .carousel__products_item > div {
+    display: none !important;
+  }
+  .carousel__container_all .carousel__products_item > div:first-child {
+    display: block !important;
+  }
+}
+.carousel__container_all {
+  overflow: hidden;
+}
+
+.carousel__container_all .carousel__products_item.active,
+.carousel__container_all .carousel__products_next,
+.carousel__container_all .carousel__products_prev {
+  display: flex !important;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel__container_all .carousel-item-end.active,
+.carousel__container_all .carousel__products_next {
+    transform: translateX(25%) !important;
+  }
+  .carousel__container_all .carousel-item-start.active,
+.carousel__container_all .carousel__products_prev {
+    transform: translateX(-25%) !important;
+  }
+}
+.carousel__container_all .carousel-item-end,
+.carousel__container_all .carousel-item-start {
+  transform: translateX(0) !important;
+}
+
+.watchvideo__container {
+  margin-top: 50px;
+  background-image: url("https://themes.muffingroup.com/be/furniturestore2/wp-content/uploads/2023/01/befurniturestore2-section-bg2.webp");
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  height: 800px;
+  position: relative;
+}
+
+.overlay_background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(50deg, #433779 25%, rgba(0, 0, 0, 0) 72%);
+}
+
+.watchvideo__text p:first-child {
+  font-size: 38px;
+  font-family: "Plus Jakarta Sans";
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.watchvideo__text p:last-child {
+  font-size: 25px;
+  font-family: "Plus Jakarta Sans";
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.watchvideo__button {
+  display: flex;
+  background-color: #fff;
+  width: 281px;
+  height: 112px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 80px;
+}
+.watchvideo__button p {
+  font-size: 19px;
+  color: #433779;
+  font-family: "Plus Jakarta Sans";
+  font-weight: bold;
+}
+.watchvideo__button button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #433779;
+}
+
+.products__contain {
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid rgb(233, 233, 233);
+  text-decoration: none;
+  padding-bottom: 40px;
+}
+.products__contain_img {
+  background-color: #f4f4f4;
+  margin-bottom: 20px;
+}
+.products__contain_img img {
+  width: 100%;
+}
+.products__contain_description p:first-child {
+  color: #433779;
+  margin-bottom: 6px;
+}
+.products__contain_description p:first-child:hover {
+  text-decoration: underline;
+}
+.products__contain_description_price {
+  color: #433779;
+}
+.products__contain_description_sale {
+  color: #433779;
+}
+.products__contain_description a {
+  margin-top: 16px;
+  padding: 14px 32px;
+  border: 1px solid rgba(67, 55, 121, 0.2);
+  background-color: transparent;
+  color: #433779;
+  font-weight: bold;
+  font-family: "Plus Jakarta Sans";
+}
+.products__contain_description a:hover {
+  border: 1px solid rgb(67, 55, 121);
+  background-color: transparent;
+}
+
+.inspiration__container {
+  position: relative;
+  background-color: #433779;
+  height: 80vh;
+  position: relative;
+  margin-bottom: 100px;
+}
+.inspiration__container .modal_cover_inspiration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("https://themes.muffingroup.com/be/furniturestore2/wp-content/uploads/2023/02/befurniturestore2-section-bg3.svg");
+}
+.inspiration__container .inspiration__img {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -70px;
+}
+.inspiration__container .inspiration__img img {
+  width: 80%;
+}
+
+@media screen and (max-width: 756px) {
+  .inspiration__container {
+    height: 60vh;
+  }
+}
+.aboutus_container {
+  height: 800px;
+}
+
+.aboutus_container {
+  position: relative;
+  height: 70vh;
+}
+
+.aboutus_text {
+  position: absolute;
+  top: 25%;
+  background-color: #f4f4f4;
+}
+.aboutus_text .title {
+  text-align: left;
+}
+
+.aboutus_img {
+  height: 100%;
+  background: url("https://themes.muffingroup.com/be/furniturestore2/wp-content/uploads/2023/02/befurniturestore2-section-bg4.webp");
+  background-size: cover;
+  background-position: top center;
+}
+
+.title__footer {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(232, 232, 232);
+  position: relative;
+}
+.title__footer img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+footer {
+  padding: 80px 0 0 0;
+}
+
+.footer__left {
+  color: #433779;
+}
+.footer__left_title {
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 600;
+}
+
+.footer__right a {
+  padding: 10px 0;
+  display: block;
+  color: #433779;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* RESPONSIVE MENU */
+#openMenu {
+  background-color: transparent;
+  color: #000;
+  display: none;
+}
+
+#closeMenu {
+  display: none;
+}
+
+.activeOpenMenu {
+  display: block !important;
+}
+
+.logoMobile {
+  display: none;
+}
+
+.btnSearchMobile {
+  display: none;
+}
+
+@keyframes rotateInfinite {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes smallToBig {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .categories__chairs {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  /* RESPONSIVE MENU */
+  .header {
+    padding: 0 5%;
+  }
+  #openMenu {
+    display: block;
+  }
+  #closeMenu {
+    display: block;
+    float: right;
+    background-color: transparent;
+    color: #000;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+  }
+  #closeMenu:hover {
+    animation: rotateInfinite 0.2s linear;
+  }
+  .navigation {
+    justify-content: space-between;
+  }
+  .navigation__menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(67, 55, 121, 0.2);
+  }
+  .navigation__menu ul {
+    animation: smallToBig 0.3s linear;
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 35%;
+    background-color: #ffffff;
+  }
+  .navigation__menu ul li {
+    border-radius: 0;
+  }
+  .navigation__menu ul li a {
+    width: 100%;
+    display: inline-block;
+  }
+  .carousel__item_banner {
+    justify-content: space-between;
+  }
+  .carousel__item_banner .carousel_text_container {
+    width: 60%;
+  }
+  .carousel__item_banner .carousel_text {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .carousel__item_banner .carousel_text h2 {
+    font-size: 30px !important;
+  }
+  .carousel__item_banner .carousel_text p {
+    margin: 20px 0;
+    color: #595959;
+    font-size: 16px;
+  }
+  .carousel__item_banner .carousel_text button {
+    padding: 12px 20px !important;
+  }
+  .carousel__item_banner .carousel_img {
+    flex: 1;
+  }
+  .carousel__item_banner .carousel_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+@media screen and (max-width: 840px) {
+  .welcome p {
+    width: 100%;
+    text-align: center;
+  }
+  .welcome ul {
+    display: none !important;
+  }
+  .carousel__item_banner {
+    flex-direction: column;
+  }
+  .carousel_text_container {
+    width: 100% !important;
+    text-align: center;
+  }
+  .carousel_text h2 {
+    margin-top: 30px;
+  }
+  .carousel_img {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .featured__right {
+    margin-top: 20px;
+  }
+  .featured__right .container {
+    padding: 0;
+  }
+}
+.btnCategoriesMobile {
+  display: none;
+}
+
+@keyframes smallToBig2 {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 756px) {
+  .navigation__categories_button {
+    display: none;
+  }
+  .btnCategoriesMobile {
+    display: block;
+  }
+  .btnCategoriesMobile button {
+    color: #433779;
+    font-size: 13px;
+    font-family: "Roboto";
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    outline: none;
+  }
+  .btnCategoriesMobile img {
+    height: 35px;
+    width: 35px;
+  }
+  .navigation__categories {
+    display: none;
+  }
+  .activeCategories {
+    display: block !important;
+  }
+  .categories {
+    position: fixed;
+    background-color: rgba(67, 55, 121, 0.2);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  .categories ul {
+    animation: smallToBig2 0.3s linear;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+  }
+  .categories ul li a span:last-child {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .btnSearchMobile {
+    display: block;
+  }
+  .header__top_search {
+    display: none;
+  }
+  .logoPC {
+    display: none;
+  }
+  .logoMobile {
+    display: block;
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .header__top_logo {
+    height: auto;
+    width: auto;
+  }
+  .navigation__menu ul {
+    width: 50%;
+  }
+  .header__top_handler ul li button,
+.header__top_handler ul li a {
+    width: 36px;
+    height: 36px;
+  }
+  .header__top_handler ul li p {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
