@@ -907,5 +907,60 @@ footer {
     height: 14px;
   }
 }
+.blogspot__content_image {
+  margin-bottom: 16px;
+}
+.blogspot__content_user {
+  display: flex;
+  margin-bottom: 8px;
+}
+.blogspot__content_user p:first-child {
+  margin-right: 30px;
+  color: #433779;
+  font-weight: 500;
+}
+.blogspot__content_user p:first-child span > i {
+  color: #433779;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.blogspot__content_user p:last-child {
+  color: #433779;
+  margin-right: 30px;
+}
+.blogspot__content_user p:last-child span > i {
+  color: #433779;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.blogspot__content_desc p {
+  color: #433779;
+  font-family: "Plus Jakarta Sans";
+  font-size: 19px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 756px) {
+  .blogspot__content_image {
+    margin-bottom: 16px;
+  }
+  .blogspot__content_user p:first-child {
+    font-size: 12px;
+    margin-right: 2px;
+  }
+  .blogspot__content_user p:first-child span > i {
+    margin-right: 2px;
+  }
+  .blogspot__content_user p:last-child {
+    font-size: 12px;
+    margin-right: 2px;
+  }
+  .blogspot__content_user p:last-child span > i {
+    margin-right: 2px;
+  }
+  .blogspot__content_desc p {
+    font-size: 14px;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

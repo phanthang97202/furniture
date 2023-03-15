@@ -9,6 +9,40 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/index.css">
+
+    <style>
+        .carousel_inner {
+            padding: 1em;
+        }
+
+        .card {
+            margin: 0 0.5em;
+            box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+            border: none;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: #e1e1e1;
+            width: 6vh;
+            height: 6vh;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        @media (min-width: 768px) {
+            .carousel_item {
+                margin-right: 0;
+                flex: 0 0 33.333333%;
+                display: block;
+            }
+
+            .carousel_inner {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -23,18 +57,19 @@
     </div>
 
     <!-- HEADER  -->
-    <div class="container__header">
+    <div style="position: sticky; top: 0; left: 0; right: 0; background-color: #fff; z-index: 20;"
+        class="container__header">
 
         <div class="header ">
             <div class="header__top ">
-                <div class="header__top_logo">
+                <a href="./index.html" class="header__top_logo">
                     <img class="logoPC"
                         src="https://themes.muffingroup.com/be/furniturestore2/wp-content/uploads/2023/01/befurniturestore2.svg"
                         alt="">
                     <img class="logoMobile"
                         src="https://themes.muffingroup.com/be/furniturestore2/wp-content/uploads/2023/02/befurniturestore2-mobile.svg"
                         alt="">
-                </div>
+                </a>
                 <div class="header__top_search">
                     <div>
                         <button><i class="fa-regular fa-magnifying-glass"></i></button>
@@ -200,7 +235,7 @@
                             <a class='activeChooseMenu' href="">Home</a>
                         </li>
                         <li>
-                            <a href="">Shop</a>
+                            <a href="./filter.html">Shop</a>
                         </li>
                         <li>
                             <a href="">Blog</a>
@@ -460,6 +495,98 @@
         </div>
     </div>
 
+    <!-- SLIDE PRODUCT  -->
+    <div class="slide__products container mt-5">
+        <div id="multiCarouselProduct" class="carousel" data-bs-ride="carousel">
+            <div class="carousel-inner carousel_inner">
+                <div class="carousel-item carousel_item  active">
+                    <div class="card">
+                        <div class="products__contain mb-0 border-0">
+                            <div style="height: 360px;" class="products__contain_img">
+                                <img class="w-100 h-100 object-fit-contain"
+                                    src="https://themes.muffingroup.com/be/furniturestore2/wp-content/uploads/2023/01/befurniturestore2-product-pic1.webp"
+                                    alt="">
+                            </div>
+                            <div class="products__contain_description">
+                                <p>Wooden details chair</p>
+                                <p class="products__contain_description_price">
+                                    <strong>$256.00</strong>
+                                </p>
+                                <a href="./detail.html" type="button" class="btn btn-light">Go to product</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel_item  ">
+                    <div class="card">
+                        <div class="products__contain mb-0 border-0">
+                            <div style="height: 360px;" class="products__contain_img">
+                                <img class="w-100 h-100 object-fit-contain"
+                                    src="https://themes.muffingroup.com/be/furniturestore2/wp-content/uploads/2023/01/befurniturestore2-product-pic7.webp"
+                                    alt="">
+                            </div>
+                            <div class="products__contain_description">
+                                <p>Wooden details chair</p>
+                                <p class="products__contain_description_price">
+                                    <strong>$256.00</strong>
+                                </p>
+                                <a href="./detail.html" type="button" class="btn btn-light">Go to product</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel_item  ">
+                    <div class="card">
+                        <div class="products__contain mb-0 border-0">
+                            <div style="height: 360px;" class="products__contain_img">
+                                <img class="w-100 h-100 object-fit-contain"
+                                    src="https://themes.muffingroup.com/be/furniturestore2/wp-content/uploads/2023/01/befurniturestore2-product-pic12.webp"
+                                    alt="">
+                            </div>
+                            <div class="products__contain_description">
+                                <p>Wooden details chair</p>
+                                <p class="products__contain_description_price">
+                                    <strong>$256.00</strong>
+                                </p>
+                                <a href="./detail.html" type="button" class="btn btn-light">Go to product</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel_item  ">
+                    <div class="card">
+                        <div class="products__contain mb-0 border-0">
+                            <div style="height: 360px;" class="products__contain_img">
+                                <img class="w-100 h-100 object-fit-contain"
+                                    src="https://themes.muffingroup.com/be/furniturestore2/wp-content/uploads/2023/01/befurniturestore2-product-pic1.webp"
+                                    alt="">
+                            </div>
+                            <div class="products__contain_description">
+                                <p>Wooden details chair</p>
+                                <p class="products__contain_description_price">
+                                    <strong>$256.00</strong>
+                                </p>
+                                <a href="./detail.html" type="button" class="btn btn-light">Go to product</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev carousel_control_prev" type="button"
+                data-bs-target="#multiCarouselProduct" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next carousel_control_next" type="button"
+                data-bs-target="#multiCarouselProduct" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
     <!-- PRODUCTS  -->
 
     <!-- <div class="container text-center my-3">
@@ -716,6 +843,127 @@
         <h2>BLOG POSTS</h2>
     </div>
 
+    <!-- BLOG SPOT  -->
+    <div class="blogspot__container container">
+        <div id="carouselBlogSpot" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselBlogSpot" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselBlogSpot" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselBlogSpot" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner container__blog">
+                <div class="carousel-item active">
+                    <div class="container container_blogspot">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                <div class="blogspot__content">
+                                    <div class="blogspot__content_image">
+                                        <img src="https://themes.muffingroup.com/be/furniturestore2/wp-content/uploads/2023/02/befurniturestore2-post-pic1.webp"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="blogspot__content_user">
+                                        <p> <span><i class="fa-solid fa-user"></i></span> Muffin Group</p>
+                                        <p>
+                                            <span><i class="fa-regular fa-clock"></i></span>
+                                            <span>
+                                                Febraury 3, 2023
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="blogspot__content_desc">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                <div class="blogspot__content">
+                                    <div class="blogspot__content_image">
+                                        <img src="https://themes.muffingroup.com/be/furniturestore2/wp-content/uploads/2023/02/befurniturestore2-post-pic2.webp"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="blogspot__content_user">
+                                        <p> <span><i class="fa-solid fa-user"></i></span> Muffin Group</p>
+                                        <p>
+                                            <span><i class="fa-regular fa-clock"></i></span>
+                                            <span>
+                                                Febraury 3, 2023
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="blogspot__content_desc">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                <div class="blogspot__content">
+                                    <div class="blogspot__content_image">
+                                        <img src="https://themes.muffingroup.com/be/furniturestore2/wp-content/uploads/2023/02/befurniturestore2-post-pic3.webp"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="blogspot__content_user">
+                                        <p> <span><i class="fa-solid fa-user"></i></span> Muffin Group</p>
+                                        <p>
+                                            <span><i class="fa-regular fa-clock"></i></span>
+                                            <span>
+                                                Febraury 3, 2023
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="blogspot__content_desc">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                <div class="blogspot__content">
+                                    <div class="blogspot__content_image">
+                                        <img src="https://themes.muffingroup.com/be/furniturestore2/wp-content/uploads/2023/02/befurniturestore2-post-pic4.webp"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="blogspot__content_user">
+                                        <p> <span><i class="fa-solid fa-user"></i></span> Muffin Group</p>
+                                        <p>
+                                            <span><i class="fa-regular fa-clock"></i></span>
+                                            <span>
+                                                Febraury 3, 2023
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="blogspot__content_desc">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBlogSpot" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBlogSpot" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
     <!-- <div class="container">
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -756,7 +1004,7 @@
     </div> -->
 
     <!-- ABOUT US  -->
-    <div class="container-fluid ">
+    <div style="margin-top: 100px;" class="container-fluid ">
         <div class="row aboutus_container">
             <div class="col-lg-4 col-md-4 col-sm-4 col-4 ">
                 <div class="aboutus_text">
@@ -948,6 +1196,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
 </body>
+<script>
+    var multipleCardCarousel = document.querySelector("#multiCarouselProduct");
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+            interval: false,
+        });
+        var carouselWidth = $(".carousel_inner")[0].scrollWidth;
+        var cardWidth = $(".carousel_item").width();
+        var scrollPosition = 0;
+        $("#multiCarouselProduct .carousel_control_next").on("click", function () {
+            if (scrollPosition < carouselWidth - cardWidth * 4) {
+                scrollPosition += cardWidth;
+                $("#multiCarouselProduct .carousel_inner").animate(
+                    { scrollLeft: scrollPosition },
+                    600
+                );
+            }
+        });
+        $("#multiCarouselProduct .carousel_control_prev").on("click", function () {
+            if (scrollPosition > 0) {
+                scrollPosition -= cardWidth;
+                $("#multiCarouselProduct .carousel_inner").animate(
+                    { scrollLeft: scrollPosition },
+                    600
+                );
+            }
+        });
+    } else {
+        $(multipleCardCarousel).addClass("slide");
+    }
+</script>
 
 </html>

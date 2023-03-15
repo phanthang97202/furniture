@@ -984,3 +984,69 @@ footer {
 
 @media screen and (max-width: 479px) {
 }
+
+// BLOG SPOT
+.blogspot__content {
+  &_image {
+    margin-bottom: 16px;
+  }
+  &_user {
+    display: flex;
+    margin-bottom: 8px;
+    p:first-child {
+      margin-right: 30px;
+      color: #433779;
+      font-weight: 500;
+      span > i {
+        color: #433779;
+        font-weight: 500;
+        margin-right: 10px;
+      }
+    }
+    p:last-child {
+      color: #433779;
+      margin-right: 30px;
+      span > i {
+        color: #433779;
+        font-weight: 500;
+        margin-right: 10px;
+      }
+    }
+  }
+  &_desc {
+    p {
+      color: #433779;
+      font-family: "Plus Jakarta Sans";
+      font-size: 19px;
+      font-weight: 600;
+    }
+  }
+}
+@media screen and (max-width: 756px) {
+  .blogspot__content {
+    &_image {
+      margin-bottom: 16px;
+    }
+    &_user {
+      p:first-child {
+        font-size: 12px;
+        margin-right: 2px;
+        span > i {
+          margin-right: 2px;
+        }
+      }
+      p:last-child {
+        font-size: 12px;
+        margin-right: 2px;
+        span > i {
+          margin-right: 2px;
+        }
+      }
+    }
+    &_desc {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

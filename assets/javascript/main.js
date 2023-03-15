@@ -1,3 +1,11 @@
+const container__header = document.querySelector(".container__header");
+window.addEventListener("scroll", (e) => {
+  console.log(container__header.getBoundingClientRect());
+  container__header.getBoundingClientRect().top === 0
+    ? (categories.style.display = "none")
+    : (categories.style.display = "block");
+});
+
 const openMenu = document.getElementById("openMenu");
 const navigation__menu = document.querySelector(".navigation__menu");
 const closeMenu = document.getElementById("closeMenu");
@@ -82,10 +90,13 @@ items.forEach((el) => {
 });
 
 // GRID FILTER PRODUCTS
+const grid1 = document.getElementById("grid1");
 const grid3 = document.getElementById("grid3");
 const grid4 = document.getElementById("grid4");
 
 grid3.addEventListener("click", (e) => {
+  container__product_one.classList.add("activeProductOne");
+  products__filter_container.style.display = "block";
   for (let i = 0; i < 4; i++) {
     const item = document.querySelector(`.col__filter_products${i + 1}`);
     item.classList.remove("col-lg-3", "col-md-4", "col-sm-6", "col-12");
@@ -94,12 +105,27 @@ grid3.addEventListener("click", (e) => {
 });
 
 grid4.addEventListener("click", (e) => {
+  container__product_one.classList.add("activeProductOne");
+  products__filter_container.style.display = "block";
   for (let i = 0; i < 4; i++) {
     const item = document.querySelector(`.col__filter_products${i + 1}`);
     item.classList.add("col-lg-3", "col-md-4", "col-sm-6", "col-12");
     item.classList.remove("col-lg-4", "col-md-6", "col-sm-6", "col-12");
   }
 });
+
+const container__product_one = document.querySelector(
+  ".container__product_one"
+);
+const products__filter_container = document.querySelector(
+  ".products__filter_container"
+);
+
+grid1.addEventListener("click", (e) => {
+  container__product_one.classList.remove("activeProductOne");
+  products__filter_container.style.display = "none";
+});
+
 // grid 3
 // col-lg-4 col-md-6 col-sm-6 col-12
 
