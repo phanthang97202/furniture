@@ -2,6 +2,27 @@ const container__header = document.querySelector(".container__header");
 const navigation = document.querySelector(".navigation");
 const header__scrollY = document.querySelector(".header__scrollY");
 
+// CART
+const yourcart__container = document.querySelector(".yourcart__container");
+const openCart = document.getElementById("openCart");
+const closeCart = document.getElementById("closeCart");
+console.log(yourcart__container, openCart, closeCart);
+
+openCart.addEventListener("click", (e) => {
+  yourcart__container.classList.remove("activeCart");
+});
+closeCart.addEventListener("click", (e) => {
+  yourcart__container.classList.add("activeCart");
+});
+
+const openLogin = document.getElementById("openLogin");
+const loginForm = document.querySelector(".loginForm");
+
+openLogin.addEventListener("click", (e) => {
+  loginForm.classList.toggle("activeOpenLogin");
+});
+
+///////////////////////
 let widthBrowse;
 window.addEventListener("load", (e) => {
   navigation.style.display = "flex";
@@ -17,6 +38,8 @@ window.addEventListener("scroll", (e) => {
   container__header.getBoundingClientRect().top === 0
     ? (categories.style.display = "none")
     : (categories.style.display = "block");
+  container__header.getBoundingClientRect().top === 0 &&
+    loginForm.classList.add("activeOpenLogin");
 });
 console.log(header__scrollY);
 window.addEventListener("scroll", (e) => {

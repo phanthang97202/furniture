@@ -141,7 +141,7 @@ ul {
           border-radius: 50%;
           color: #4a3ce4;
         }
-        button {
+        & > button {
           display: block;
           //   padding: 18px;
           border: none;
@@ -168,6 +168,21 @@ ul {
       }
     }
   }
+}
+
+// FORM LOGIN
+.activeOpenLogin {
+  display: none;
+}
+.login__username {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.login__password {
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 // ==========================NAVIGATION======================
@@ -1100,5 +1115,150 @@ footer {
         font-size: 14px;
       }
     }
+  }
+}
+// css cart
+@keyframes slipToBrowse {
+  0% {
+    width: 0;
+  }
+  0% {
+    width: 30%;
+  }
+}
+.activeCart {
+  display: none;
+}
+.yourcart__container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+}
+.yourcart_overlay {
+  background-color: #fff;
+  height: 100%;
+  width: 30%;
+  float: right;
+  transition: all 0.3s linear;
+}
+.yourcart {
+  text-align: center;
+
+  &__title {
+    height: 10vh;
+    padding: 16px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    #closeCart {
+      position: absolute;
+      top: 16px;
+      left: 30px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      font-size: 26px;
+      opacity: 0.5;
+    }
+    p {
+      i {
+        margin-right: 10px;
+      }
+      color: #433779;
+      font-size: 25px;
+      font-family: "Plus Jakarta Sans";
+      font-weight: 600;
+    }
+  }
+  &__products {
+    display: flex;
+    height: 60vh;
+
+    p {
+      i {
+        font-size: 40px;
+        opacity: 0.5;
+        margin-bottom: 20px;
+      }
+      color: #433779;
+      font-size: 14px;
+      font-family: "Roboto";
+      align-items: center;
+      margin: auto;
+      text-align: center;
+    }
+  }
+  &__payment {
+    padding: 0 20px;
+    height: 30vh;
+
+    background-color: #f7f7f7;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 0;
+      align-items: center;
+      &:first-child {
+        border-bottom: 1px solid rgb(214, 214, 214);
+      }
+      li {
+        font-size: 14px;
+        color: #433779;
+      }
+      .total__money {
+        font-size: 22px;
+        color: #433779;
+        font-weight: bold;
+      }
+    }
+    .process__checkout {
+      border: none;
+      background-color: #ee6352;
+      outline: none;
+      font-family: "Plus Jakarta Sans";
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: 4px;
+      width: 100%;
+      font-weight: bold;
+      margin: 16px 0 10px 0;
+      &:hover {
+        background-color: #da4632;
+        transition: all 0.3s linear;
+      }
+    }
+    & > a {
+      font-size: 14px;
+      color: #433779;
+      opacity: 0.6;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.yourcart__container::before {
+  // content: "";
+  // z-index: 19;
+  // position: absolute;
+  // top: 0;
+  // bottom: 0;
+  // left: 0;
+  // background-color: #433779;
+}
+
+@media screen and (max-width: 900px) {
+  .yourcart_overlay {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .yourcart_overlay {
+    width: 100%;
   }
 }
