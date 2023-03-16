@@ -30,7 +30,7 @@ ul {
   display: none !important;
 }
 
-.navigation__categories_button:hover .categories {
+.navigation__categories:hover > .categories {
   display: block !important;
 }
 
