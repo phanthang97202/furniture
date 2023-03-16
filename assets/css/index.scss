@@ -1141,6 +1141,8 @@ footer {
 }
 .activeCart {
   display: none;
+  // width: 0;
+  transition: 0.3s;
 }
 .yourcart__container {
   position: fixed;
@@ -1156,9 +1158,9 @@ footer {
   height: 100%;
   width: 30%;
   float: right;
-  transition: all 0.3s linear;
+  transition: 3s;
   animation: smallToBig 0.3s linear;
-  animation: bigToSmall 0.3s linear;
+  // animation: bigToSmall 0.3s linear;
 }
 .yourcart {
   text-align: center;
