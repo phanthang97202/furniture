@@ -2,26 +2,6 @@ const container__header = document.querySelector(".container__header");
 const navigation = document.querySelector(".navigation");
 const header__scrollY = document.querySelector(".header__scrollY");
 
-// CART
-const yourcart__container = document.querySelector(".yourcart__container");
-const openCart = document.getElementById("openCart");
-const closeCart = document.getElementById("closeCart");
-console.log(yourcart__container, openCart, closeCart);
-
-openCart.addEventListener("click", (e) => {
-  yourcart__container.classList.remove("activeCart");
-});
-closeCart.addEventListener("click", (e) => {
-  yourcart__container.classList.add("activeCart");
-});
-
-const openLogin = document.getElementById("openLogin");
-const loginForm = document.querySelector(".loginForm");
-
-openLogin.addEventListener("click", (e) => {
-  loginForm.classList.toggle("activeOpenLogin");
-});
-
 ///////////////////////
 let widthBrowse;
 window.addEventListener("load", (e) => {
@@ -88,6 +68,25 @@ window.addEventListener("click", (e) => {
   }
 });
 
+// CART
+const yourcart__container = document.querySelector(".yourcart__container");
+const openCart = document.getElementById("openCart");
+const closeCart = document.getElementById("closeCart");
+
+openCart.addEventListener("click", (e) => {
+  yourcart__container.classList.remove("activeCart");
+});
+closeCart.addEventListener("click", (e) => {
+  yourcart__container.classList.add("activeCart");
+});
+
+const openLogin = document.getElementById("openLogin");
+const loginForm = document.querySelector(".loginForm");
+
+openLogin.addEventListener("click", (e) => {
+  loginForm.classList.toggle("activeOpenLogin");
+});
+
 // countdown
 const daysNode = document.querySelector(".timer__day > h2");
 const hoursNode = document.querySelector(".timer__hour > h2");
@@ -137,43 +136,6 @@ items.forEach((el) => {
     el.appendChild(cloneChild.children[0]);
     next = next.nextElementSibling;
   }
-});
-
-// GRID FILTER PRODUCTS
-const grid1 = document.getElementById("grid1");
-const grid3 = document.getElementById("grid3");
-const grid4 = document.getElementById("grid4");
-
-grid3.addEventListener("click", (e) => {
-  container__product_one.classList.add("activeProductOne");
-  products__filter_container.style.display = "block";
-  for (let i = 0; i < 4; i++) {
-    const item = document.querySelector(`.col__filter_products${i + 1}`);
-    item.classList.remove("col-lg-3", "col-md-4", "col-sm-6", "col-12");
-    item.classList.add("col-lg-4", "col-md-6", "col-sm-6", "col-12");
-  }
-});
-
-grid4.addEventListener("click", (e) => {
-  container__product_one.classList.add("activeProductOne");
-  products__filter_container.style.display = "block";
-  for (let i = 0; i < 4; i++) {
-    const item = document.querySelector(`.col__filter_products${i + 1}`);
-    item.classList.add("col-lg-3", "col-md-4", "col-sm-6", "col-12");
-    item.classList.remove("col-lg-4", "col-md-6", "col-sm-6", "col-12");
-  }
-});
-
-const container__product_one = document.querySelector(
-  ".container__product_one"
-);
-const products__filter_container = document.querySelector(
-  ".products__filter_container"
-);
-
-grid1.addEventListener("click", (e) => {
-  container__product_one.classList.remove("activeProductOne");
-  products__filter_container.style.display = "none";
 });
 
 // grid 3
