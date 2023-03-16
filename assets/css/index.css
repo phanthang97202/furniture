@@ -158,7 +158,6 @@ ul {
 }
 
 .navigation {
-  animation: header 0.3s linear;
   display: flex;
   align-items: center;
   padding: 8px 0;
