@@ -1,9 +1,36 @@
 const container__header = document.querySelector(".container__header");
+const navigation = document.querySelector(".navigation");
+const header__scrollY = document.querySelector(".header__scrollY");
+
+let widthBrowse;
+window.addEventListener("load", (e) => {
+  navigation.style.display = "flex";
+});
+// widthBrowse === window.screenY && (navigation.style.display = "flex");
 window.addEventListener("scroll", (e) => {
   console.log(container__header.getBoundingClientRect());
   container__header.getBoundingClientRect().top === 0
+    ? // && window.innerWidth > 1024
+      (navigation.style.display = "none")
+    : (navigation.style.display = "flex");
+  window.innerWidth < 1024 && (navigation.style.display = "flex");
+  container__header.getBoundingClientRect().top === 0
     ? (categories.style.display = "none")
     : (categories.style.display = "block");
+});
+console.log(header__scrollY);
+window.addEventListener("scroll", (e) => {
+  container__header.getBoundingClientRect().top === 0
+    ? header__scrollY.classList.remove("activeScrollY")
+    : header__scrollY.classList.add("activeScrollY");
+});
+window.addEventListener("resize", (e) => {
+  // widthBrowse = window.innerWidth;
+  window.innerWidth < 1024 ? console.log("nhỏ hơn 1024") : console.log("flase");
+  window.innerWidth < 1024
+    ? (navigation.style.display = "flex !important")
+    : (navigation.style.display = "none");
+  console.log(window.innerWidth);
 });
 
 const openMenu = document.getElementById("openMenu");
@@ -131,3 +158,5 @@ grid1.addEventListener("click", (e) => {
 
 // grid 4
 // col-lg-3 col-md-4 col-sm-6 col-12
+
+// ẨN MENU BOTTOM
