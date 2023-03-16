@@ -30,9 +30,8 @@ window.addEventListener("scroll", (e) => {
 window.addEventListener("resize", (e) => {
   // widthBrowse = window.innerWidth;
   window.innerWidth < 1024 ? console.log("nhỏ hơn 1024") : console.log("flase");
-  window.innerWidth < 1024
-    ? (navigation.style.display = "flex !important")
-    : (navigation.style.display = "none");
+  window.innerWidth < 1024 && (navigation.style.display = "flex !important");
+  // : (navigation.style.display = "none");
   console.log(window.innerWidth);
 });
 
