@@ -1061,6 +1061,8 @@ footer {
   width: 30%;
   float: right;
   transition: all 0.3s linear;
+  animation: smallToBig 0.3s linear;
+  animation: bigToSmall 0.3s linear;
 }
 
 .yourcart {
