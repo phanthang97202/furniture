@@ -26,6 +26,14 @@ ul {
   scroll-behavior: smooth;
 }
 
+.categories {
+  display: none !important;
+}
+
+.navigation__categories_button:hover .categories {
+  display: block !important;
+}
+
 .products__detail {
   color: #433779;
   padding-top: 60px;

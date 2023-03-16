@@ -23,7 +23,12 @@ ul {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
-
+.categories {
+  display: none !important;
+}
+.navigation__categories_button:hover .categories {
+  display: block !important;
+}
 // DETAIL PRODUCTS
 .products__detail {
   color: #433779;
