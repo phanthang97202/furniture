@@ -65,6 +65,8 @@ ul {
 
   // padding: 0 10%;
   animation: header 0.3s linear;
+
+  // transition: all 1s linear;
 }
 @keyframes header {
   0% {
@@ -781,8 +783,17 @@ footer {
 #closeMenu {
   display: none;
 }
+@keyframes bigToSmall {
+  100% {
+    width: auto;
+  }
+  0% {
+    width: 0;
+  }
+}
 .activeOpenMenu {
   display: block !important;
+  animation: bigToSmall 0.3s linear;
 }
 .logoMobile {
   display: none;
@@ -848,6 +859,7 @@ footer {
     bottom: 0;
     left: 0;
     background-color: rgba(67, 55, 121, 0.2);
+
     ul {
       animation: smallToBig 0.3s linear;
 

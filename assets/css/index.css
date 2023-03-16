@@ -731,8 +731,17 @@ footer {
   display: none;
 }
 
+@keyframes bigToSmall {
+  100% {
+    width: auto;
+  }
+  0% {
+    width: 0;
+  }
+}
 .activeOpenMenu {
   display: block !important;
+  animation: bigToSmall 0.3s linear;
 }
 
 .logoMobile {

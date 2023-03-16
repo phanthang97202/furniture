@@ -9,17 +9,19 @@ window.addEventListener("load", (e) => {
 });
 // widthBrowse === window.screenY && (navigation.style.display = "flex");
 window.addEventListener("scroll", (e) => {
-  console.log(container__header.getBoundingClientRect());
-  container__header.getBoundingClientRect().top === 0
-    ? // && window.innerWidth > 1024
-      (navigation.style.display = "none")
-    : (navigation.style.display = "flex");
-  window.innerWidth < 1024 && (navigation.style.display = "flex");
-  container__header.getBoundingClientRect().top === 0
-    ? (categories.style.display = "none")
-    : (categories.style.display = "block");
-  container__header.getBoundingClientRect().top === 0 &&
-    loginForm.classList.add("activeOpenLogin");
+  setTimeout(() => {
+    console.log(container__header.getBoundingClientRect());
+    container__header.getBoundingClientRect().top === 0
+      ? // && window.innerWidth > 1024
+        (navigation.style.display = "none")
+      : (navigation.style.display = "flex");
+    window.innerWidth < 1024 && (navigation.style.display = "flex");
+    container__header.getBoundingClientRect().top === 0
+      ? (categories.style.display = "none")
+      : (categories.style.display = "block");
+    container__header.getBoundingClientRect().top === 0 &&
+      loginForm.classList.add("activeOpenLogin");
+  }, 100);
 });
 console.log(header__scrollY);
 window.addEventListener("scroll", (e) => {
