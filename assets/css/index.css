@@ -1159,5 +1159,14 @@ footer {
     width: 100%;
   }
 }
+@media screen and (max-width: 756px) {
+  footer {
+    position: inherit !important;
+  }
+  footer.container,
+footer.container-sm {
+    max-width: fit-content;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

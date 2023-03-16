@@ -55,13 +55,48 @@
                             <p>0</p>
                         </li>
                         <li>
-                            <button><i class="fa-light fa-cart-shopping"></i></button>
+                            <button id="openCart"><i class="fa-light fa-cart-shopping"></i></button>
                             <p>0</p>
                         </li>
-                        <li>
-                            <button><i class="fa-light fa-user"></i></button>
-                            <div style="width:200px;height:200px" class="d-none ">
+                        <li style="position: relative;" class="">
+                            <button id="openLogin"><i class="fa-light fa-user"></i></button>
+                            <div class="loginForm activeOpenLogin"
+                                style="transition: all .3s linear; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;position: absolute;top: 50px ; padding:20px;right: 0px; width: 320px ; background-color: #fff; z-index: 21;">
+                                <form class="w-100">
+                                    <h4 style="font-family: 'Plus Jakarta Sans';font-weight: bold;">Login</h4>
+                                    <!-- Email input -->
+                                    <div class="form-outline mb-4">
+                                        <input type="email" id="form2Example1" class="form-control login__username"
+                                            placeholder="Username or email*" required />
+                                    </div>
 
+                                    <!-- Password input -->
+                                    <div class="form-outline mb-4">
+                                        <input type="password" id="form2Example2" class="form-control login__password"
+                                            placeholder="Password*" required />
+                                    </div>
+
+                                    <!-- 2 column grid layout for inline styling -->
+                                    <div class="row mb-4">
+                                        <div class="col d-flex ">
+                                            <!-- Checkbox -->
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="form2Example31" checked />
+                                                <label class="form-check-label" for="form2Example31"> Remember me
+                                                </label>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <!-- Submit button -->
+                                    <button style="background-color: #ee6352;padding: 10px 0;" type="button"
+                                        class="btn btn-primary btn-block mb-4 w-100 border-0 ">Login</button>
+
+                                    <a class="w-100 h-auto" href="">Lost your password</a>
+                                </form>
                             </div>
                         </li>
                     </ul>
@@ -750,7 +785,8 @@
 
 
     <!-- LINK SCRIPT  -->
-    <script src="./assets/javascript/main.js"></script>
+    <!-- <script src="./assets/javascript/main.js"></script> -->
+    <script src="./assets/javascript/detail.js"></script>
     <script src=" https://kit.fontawesome.com/3426ec3618.js" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
